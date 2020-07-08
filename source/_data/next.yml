@@ -182,7 +182,7 @@ social:
   #YouTube: https://youtube.com/yourname || fab fa-youtube
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
-  Admin: https://raingking.eu.org//admin || fas fa-leaf
+  Admin: https://raingking.eu.org/admin || fas fa-leaf
 
 social_icons:
   enable: true
