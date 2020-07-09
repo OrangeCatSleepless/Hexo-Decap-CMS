@@ -3,7 +3,11 @@
 ## 介绍
 使用[Hexo](https://hexo.io/)和[Netlify CMS](https://github.com/netlify/netlify-cms)构建的示例站点
 
-[网站预览](https://raingking.eu.org/)
+目前内置[next主题](https://github.com/next-theme/hexo-theme-next) | [fluid主题](https://github.com/fluid-dev/hexo-theme-fluid) | [cards主题](https://github.com/ChrAlpha/hexo-theme-cards)
+
+网站样式预览:[next](https://next.qwqmiao.cf/) | [fluid](https://fluid.qwqmiao.cf/) | [cards](https://cards.qwqmiao.cf/)
+
+更多配置请查看对应主题自行修改
 
 [后台管理预览](https://raingking.eu.org/admin/#/)
 
@@ -25,14 +29,6 @@
 ### 部署到Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/leicancun/hexo-netlify.git)
-
-### 内置主题
-
-[next主题](https://github.com/next-theme/hexo-theme-next)
-
-[fluid主题](https://github.com/fluid-dev/hexo-theme-fluid)
-
-[cards主题](https://github.com/ChrAlpha/hexo-theme-cards)
 
 ### 参考:
 https://github.com/lunaceee/hexo-material-netlify
