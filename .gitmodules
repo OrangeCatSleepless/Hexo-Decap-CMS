@@ -1,0 +1,9 @@
+[submodule "themes/next"]
+	path = themes/next
+	url = https://github.com/next-theme/hexo-theme-next.git
+[submodule "themes/fluid"]
+	path = themes/fluid
+	url = https://github.com/fluid-dev/hexo-theme-fluid.git
+[submodule "themes/cards"]
+	path = themes/cards
+	url = https://github.com/ChrAlpha/hexo-theme-cards.git
