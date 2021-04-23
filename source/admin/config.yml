@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
+  # name: test-repo # 测试专用 https://www.netlifycms.org/docs/test-backend/
+  name: git-gateway # https://www.netlifycms.org/docs/git-gateway-backend/
   branch: main # 要更新的分支(可选；默认为主分支)
+  squash_merges: true # 合并提交
+
+local_backend: true
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
@@ -9,21 +13,133 @@ publish_mode: editorial_workflow
 media_folder: "source/images/uploads" # 媒体文件将存储在图片/上载下的Repo中。
 public_folder: "/images/uploads" # 上传的媒体的src属性将以/images/uploads开头。
 
-locale: "zh_Hant" # 语言
+locale: "zh_Hans" # 语言环境 https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-locales/src
 
-collections:
+collections:      # https://www.netlifycms.org/docs/configuration-options/#collections
   - name: "posts" # 在路由中使用，例如：/admin/collections/blog。
     label: "Post" # 在用户界面中使用
     folder: "source/_posts" # 存储文件的文件夹的路径。
     create: true # 允许用户在这个集合中创建新的文件。
     fields: # 每份文件的字段，通常是前面的内容。
-      - {label: "封面", name: "banner", widget: "image", required: false} 
+      - {label: "顶部图", name: "banner_img", widget: "image", required: false} 
+      - {label: "文章封面", name: "index_img", widget: "image", required: false} 
+      - {label: "文章排序", name: "sticky", widget: "number", required: false}
       - {label: "标题", name: "title", widget: "string"}
       - {label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
       - {label: "更新日期", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
       - {label: "标签", name: "tags", widget: "list", required: false}
       - {label: "分类", name: "categories", widget: "list", required: false}
-      - {label: "照片", name: "photos", widget: "list", required: false}
+      - {label: "关键词", name: "keywords", widget: "list", required: false}
+      - {label: "摘要", name: "excerpt", widget: "list", required: false}
       - {label: "内容", name: "body", widget: "markdown", required: false}
       - {label: "永久链接", name: "permalink", widget: "string", required: false}
       - {label: "评论", name: "comments", widget: "boolean", default: true, required: false}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "source/about/index.md"
+        name: "about"
+        label: "关于"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "内容", name: "body", widget: "markdown", required: false}
+          - {label: "评论", name: "comments", widget: "boolean", default: true, required: false}
+
+  - name: "settings"
+    label: "settings"
+    files:      
+      - file: "source/_data/fluid_config.yml"
+        name: "fluid"
+        label: "fluid主题配置"
+        editor:
+          preview: true      # 是否开启编辑预览
+        fields:
+          - label: "首页"
+            name: "index"
+            widget: "object"
+            collapsed: true   # 是否折叠显示
+            fields:
+              - label: "顶部图"
+                name: "banner_img"
+                widget: "image"
+              - label: "高度"
+                name: "banner_img_height"
+                widget: "number"
+          - label: "文章页"
+            name: "post"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "顶部图(默认)"
+                name: "banner_img"
+                widget: "image"
+              - label: "高度"
+                name: "banner_img_height"
+                widget: "number" 
+              - label: "文章封面图(默认)"
+                name: "default_index_img"
+                widget: "image"
+          - label: "归档页"
+            name: "archive"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "顶部图"
+                name: "banner_img"
+                widget: "image"
+              - label: "高度"
+                name: "banner_img_height"
+                widget: "number"
+          - label: "分类页"
+            name: "category"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "顶部图"
+                name: "banner_img"
+                widget: "image"
+              - label: "高度"
+                name: "banner_img_height"
+                widget: "number"
+          - label: "标签页"
+            name: "tag"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "顶部图"
+                name: "banner_img"
+                widget: "image"
+              - label: "高度"
+                name: "banner_img_height"
+                widget: "number"
+          - label: "关于页"
+            name: "about"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "顶部图"
+                name: "banner_img"
+                widget: "image"
+              - label: "高度"
+                name: "banner_img_height"
+                widget: "number"
+          - label: "友链页面"
+            name: "links"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "顶部图"
+                name: "banner_img"
+                widget: "image"
+              - label: "高度"
+                name: "banner_img_height"
+                widget: "number"
+              - label: "项目"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "网站名称", name: "title", widget: "string", required: false}
+                  - {label: "网址描述", name: "intro", widget: "string", required: false}
+                  - {label: "网站地址", name: "link", widget: "string", required: false}
+                  - {label: "网站图片", name: "avatar", widget: "image", required: false}

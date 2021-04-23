@@ -1,0 +1,31 @@
+index:
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/background.webp
+  banner_img_height: 100
+post:
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/mmexport1602581319886.webp
+  banner_img_height: 70
+  default_index_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-g8wvm7.webp
+archive:
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421595370-wallhaven-q6ov7d.jpg
+  banner_img_height: 80
+category:
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421818281-wallhaven-zm93dj.jpg
+  banner_img_height: 80
+tag:
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421669417-wallhaven-1kkm2g.jpg
+  banner_img_height: 80
+about:
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-pkkr2.webp
+  banner_img_height: 80
+links:
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421416500-wallhaven-rddv31.jpg
+  banner_img_height: 80
+  items:
+    - title: Fluid Repo
+      intro: 主题 GitHub 仓库
+      link: https://github.com/fluid-dev/hexo-theme-fluid
+      avatar: /img/favicon.png
+    - title: 暮雨千泷
+      intro: 青天白日梦神仙
+      link: https://www.myql.xyz
+      avatar: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/circle-cropped.webp
