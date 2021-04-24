@@ -4,21 +4,21 @@ index:
 post:
   banner_img: /images/uploads/mmexport1602581319886.webp
   banner_img_height: 70
-  default_index_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-g8wvm7.webp
+  default_index_img: /images/uploads/wallhaven-g8wvm7.webp
 archive:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421595370-wallhaven-q6ov7d.jpg
+  banner_img: /images/uploads/1616421595370-wallhaven-q6ov7d.jpg
   banner_img_height: 80
 category:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421818281-wallhaven-zm93dj.jpg
+  banner_img: /images/uploads/1616421818281-wallhaven-zm93dj.jpg
   banner_img_height: 80
 tag:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421669417-wallhaven-1kkm2g.jpg
+  banner_img: /images/uploads/1616421669417-wallhaven-1kkm2g.jpg
   banner_img_height: 80
 about:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-pkkr2.webp
+  banner_img: /images/uploads/wallhaven-pkkr2.webp
   banner_img_height: 80
 links:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421416500-wallhaven-rddv31.jpg
+  banner_img: /images/uploads/1616421416500-wallhaven-rddv31.jpg
   banner_img_height: 80
   items:
     - title: Fluid Repo
