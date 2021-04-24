@@ -2,7 +2,7 @@ index:
   banner_img: /images/uploads/background.webp
   banner_img_height: 100
 post:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/mmexport1602581319886.webp
+  banner_img: /images/uploads/mmexport1602581319886.webp
   banner_img_height: 70
   default_index_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-g8wvm7.webp
 archive:
