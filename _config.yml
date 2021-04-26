@@ -3,18 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 演示站点
 subtitle: ''
 description: '这是一个演示站点'
 keywords:
-author: 橘子是橘猫
+author: 
 language: zh-CN
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://yoursite.com
-root: /
 #permalink: :year/:month/:day/:title/
 permalink: post/:abbrlink/
 permalink_defaults:
@@ -100,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -123,13 +122,52 @@ abbrlink:
   auto_date: false #enable auto date, it can auto fill the date by time today
   force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
   
-# 本地搜索
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
+# # 本地搜索
+# search:
+#   path: search.xml
+#   field: post
+#   format: html
+#   limit: 10000
 
 # 站点地图
 sitemap:
   path: sitemap.xml
+# hexo-filter-nofollow
+# https://github.com/hexojs/hexo-filter-nofollow
+nofollow:
+  enable: true
+  field: site
+  exclude:
+# hexo-all-minifier
+all_minifier: true
+html_minifier:
+  enable: true
+  ignore_error: false
+  silent: true
+  exclude:
+css_minifier:
+  enable: true
+  silent: true
+  exclude: 
+    - '*.min.css'
+js_minifier:
+  enable: true
+  mangle: true
+  silent: true
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+js_concator:
+  enable: false
+  bundle_path: '/js/bundle.js'
+  front: false
+  silent: false
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+  silent: true
