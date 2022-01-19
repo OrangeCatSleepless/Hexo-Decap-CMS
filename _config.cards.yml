@@ -13,7 +13,12 @@
 head: 
   
   # 网站图标
-  favicon: /favicon.ico
+  favicon:
+    ico: 
+    small: 
+    medium: 
+    apple_touch_icon: 
+    safari_pinned_tab: 
   
   # 社交分享链接
   opengraph: 
@@ -82,7 +87,8 @@ style:
 
   # 颜色配置
   color: 
-    main_color: '#eb5757'
+    main_color: '#6200ee'
+    main_color_dark: '#bb86fc'
 
   # 弧度设置
   radius: 
@@ -184,11 +190,11 @@ meta:
 comments: 
   use:   # disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire
 
-  ## Disqus
+  # Disqus
   disqus:  
     shortname: 
 
-  ## DisqusJS  
+  # DisqusJS  
   disqusjs: 
     shortname: 
     siteName: 
@@ -197,7 +203,7 @@ comments:
     admin: ''
     nesting: 2
 
-  ## Valine
+  # Valine
   valine: 
     appId: 
     appKey:
@@ -239,19 +245,33 @@ comments:
     visitor: 
     serverURLs: 
 
-  ## Gitalk
+  # Gitalk
   gitalk:
     repo:
     owner:
     clientID:
     clientSecret:
 
-  ## Gitment
+  # Gitment
   gitment:
     repo:
     owner:
     client_id:
     client_secret:
+
+  # Artalk
+  artalk: 
+    serverUrl: 
+    placeholder: 
+    noComment: 
+    defaultAvatar: 
+    pageKey: 
+    gravatar: 
+      cdn: 
+    readMore: 
+      pageSize: 
+      autoLoad: 
+    emoticons: 
   
   # Livere 来比力
   livere: 
@@ -263,6 +283,7 @@ comments:
     conf:
     thread_key_type: path # id | path，单独定义时候用 “id”
 
+  # Wildfire
   wildfire: 
     database_provider: firebase # firebase | wilddog
     wilddog_site_id:
@@ -274,6 +295,10 @@ comments:
     firebase_messaging_sender_id:
     theme: light # light | dark
     locale: en
+    
+  # Twikoo
+  twikoo:
+    envId: # 你的 CloudBase 环境 ID
 
 
 
@@ -286,6 +311,10 @@ analytics:
   gtags_site_id:
   baidu_site_id: 
   cnzz_site_id: 
+  cloudflare_site_id: 
+  umami:
+    id:
+    url:
 
 
 
@@ -375,6 +404,11 @@ back_to_top: false
 # 深色模式
 darkmode: false
 
+# Mermaid Diagrams
+mermaid: 
+  enable: false
+  options: 
+
 
 
 # ---------------------------------------------------------------
@@ -386,22 +420,22 @@ darkmode: false
 vendors:
 
   # main style css
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.0/dist/css/style/main.min.css
-  # Version: 1.0
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/style/main.min.css
+  # Version: 1.2
   # 如果你有自定义样式，请务必将此项修改为自己的 CDN 地址，或者单纯留空
   style: 
 
   # darkmode
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.0/dist/css/style/dark.min.css
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.0/dist/js/darkmode.min.js
-  # Version 1.0
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/style/dark.min.css
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/js/darkmode.min.js
+  # Version 1.2
   darkmode: 
     css: 
     js: 
   
   # code highlight css
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.0/dist/css/highlight/
-  # Version: 1.0
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/highlight/
+  # Version: 1.2
   highlight: 
 
   # highlight.js theme
@@ -416,8 +450,8 @@ vendors:
 
   # tag-plugin note css
   # https://github.com/ChrAlpha/hexo-theme-cards
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.1/dist/css/style/note.min.css
-  # Version 1.1
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/style/note.min.css
+  # Version 1.2
   note: 
 
   # Lazyload js
@@ -426,13 +460,13 @@ vendors:
   lazyload: 
   
   # back_to_top button
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.1/dist/js/b2t.min.js
-  # Version 1.1
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/js/b2t.min.js
+  # Version 1.2
   back_to_top: 
 
   # local search plugin
-  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.1/dist/js/local-search.min.js
-  # Version 1.1
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/js/local-search.min.js
+  # Version 1.2
   local_search: 
   
   # Valine comments system
@@ -444,16 +478,40 @@ vendors:
   # https://github.com/MiniValine/MiniValine
   # Version 2.7.5
   minivaline: 
+
+  # Artalk
+  # https://github.com/qwqcode/Artalk
+  # Version 1.0.6
+  artalk: 
+    css: 
+    js: 
   
   # Wildfire comments system
   # https://github.com/cheng-kang/wildfire/
   # Version: 0.3.9
   wildfire: 
   
-  # MathJax js
+  # Twikoo
+  # https://github.com/imaegoo/twikoo
+  # Version 0.3.2
+  twikoo: 
+
+  # MathJax
   # https://www.mathjax.org/
   # Version: 3
   mathjax: 
+
+  # KaTeX
+  # https://katex.org/
+  # Version 0.12.0
+  katex: 
+    css: 
+    js: 
+
+  # Mermiad Disgrams
+  # https://mermaid-js.github.io/
+  # Version 8.10.2
+  mermaid: 
 
   # busuanzi counter js
   # https://busuanzi.ibruce.info
