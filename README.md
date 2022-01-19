@@ -2,11 +2,13 @@
 
 ## 介绍
 
-使用[Hexo 5.4.0](https://hexo.io/)和[Netlify CMS](https://github.com/netlify/netlify-cms)构建的示例站点
+使用[Hexo 6.0.0](https://hexo.io/)和[Netlify CMS](https://github.com/netlify/netlify-cms)构建的示例站点
 
-使用子模块方式,目前内置[next主题 v8.3.0](https://github.com/next-theme/hexo-theme-next) | [fluid主题 v1.8.10](https://github.com/fluid-dev/hexo-theme-fluid) | [cards主题 1.1.0](https://github.com/ChrAlpha/hexo-theme-cards)
+使用子模块方式,目前内置[next主题 v8.9.0](https://github.com/next-theme/hexo-theme-next) | [fluid主题 v1.8.14](https://github.com/fluid-dev/hexo-theme-fluid) | [cards主题 1.3.1](https://github.com/ChrAlpha/hexo-theme-cards)
 
 默认启用了[fluid主题](https://github.com/next-theme/hexo-theme-next),如要切换主题请在[_config.yml](https://github.com/leicancun/hexo-netlify/blob/main/_config.yml)更改`theme: fluid`中`fluid`改为你需要的主题名称
+
+> 注意，默认仅配置了fluid主题，其他主题不支持在线修改主题项目，如切换主题，请自行修改`admin>config.yml`
 
 更多配置请查看对应主题自行修改
 
