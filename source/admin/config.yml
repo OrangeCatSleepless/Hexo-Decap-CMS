@@ -24,7 +24,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
       - {label: "顶部图", name: "banner_img", widget: "image", required: false} 
       - {label: "文章封面", name: "index_img", widget: "image", required: false} 
       - {label: "文章排序", name: "sticky", widget: "number", required: false}
-      - {label: "标题", name: "title", widget: "string"}
+      - {label: "标题", name: "title", widget: "string", tagname: 'h1' }
       - {label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
       - {label: "更新日期", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
       - {label: "标签", name: "tags", widget: "list", required: false}
@@ -42,10 +42,11 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
         name: "about"
         label: "关于"
         fields:
-          - {label: "标题", name: "title", widget: "string"}
+          - {label: "标题", name: "title", widget: "string", tagname: 'h1' }
           - {label: "内容", name: "body", widget: "markdown", required: false}
           - {label: "评论", name: "comments", widget: "boolean", default: true, required: false}
 
+# 如切换主题，请删除以下选项或自行配置，默认仅配置了fluid主题
   - name: "settings"
     label: "settings"
     files:      
@@ -53,7 +54,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
         name: "fluid"
         label: "fluid主题配置"
         editor:
-          preview: true      # 是否开启编辑预览
+          preview: false      # 是否开启编辑预览
         fields:
           - label: "首页"
             name: "index"
@@ -139,7 +140,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
                 name: "items"
                 widget: "list"
                 fields:
-                  - {label: "网站名称", name: "title", widget: "string", required: false}
+                  - {label: "网站名称", name: "title", widget: "string", required: true}
                   - {label: "网址描述", name: "intro", widget: "string", required: false}
-                  - {label: "网站地址", name: "link", widget: "string", required: false}
-                  - {label: "网站图片", name: "avatar", widget: "image", required: false}
+                  - {label: "网站地址", name: "link", widget: "string", required: true}
+                  - {label: "网站头像", name: "avatar", widget: "image", required: true}
