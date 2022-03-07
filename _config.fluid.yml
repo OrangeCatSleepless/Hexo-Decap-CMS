@@ -18,11 +18,11 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/Natsume.ico
+favicon: /img/favicon.png
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/Natsume.ico
+apple_touch_icon: /img/favicon.png
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
@@ -51,7 +51,7 @@ code:
     # 实现高亮的库，对应下面的设置
     # Highlight library
     # Options: highlightjs | prismjs
-    lib: "prismjs"
+    lib: "highlightjs"
 
     highlightjs:
       # 在链接中挑选 style 填入
@@ -67,7 +67,7 @@ code:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
       # Select the style button on the right side of the link page, you can also set the CSS link
       # See: https://prismjs.com/
-      style: "SOLARIZED LIGHT"
+      style: "default"
 
       # 设为 true 高亮将本地静态生成（并只支持部分 prismjs 插件），设为 false 高亮将在浏览器通过 js 生成
       # If true, it will be generated locally (but some prismjs plugins are not supported). If false, it will be generated via JS in the browser
@@ -322,16 +322,9 @@ navbar:
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - {
-      key: '藏宝箱',
-      icon: 'iconfont icon-th-large',
-      submenu: [
-      { key: "about", link: "/about/", icon: "iconfont icon-user-fill" },
-      { key: "links", link: "/links/", icon: "iconfont icon-link-fill" },
-      { key: '收藏夹', link: 'https://docs.myql.xyz', icon: "iconfont icon-bookmark-fill" },
-      { key: 'Admin', link: '/admin/', icon: "iconfont icon-users" }
-      ]
-    }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - { key: 'Admin', link: '/admin/', icon: "iconfont icon-users" }
+    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -876,15 +869,15 @@ about:
   # banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle:
-  avatar: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/circle-cropped.webp
-  name: "暮雨千泷"
-  intro: "青天白日梦神仙"
+  avatar: /img/avatar.png
+  name: "Fluid"
+  intro: "An elegant theme for Hexo"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    #- { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    #- { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
-    #- { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
+    - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
 
 #---------------------------
@@ -896,7 +889,7 @@ about:
 #---------------------------
 page:
   banner_img: /img/default.png
-  banner_img_height: 80
+  banner_img_height: 60
   banner_mask_alpha: 0.3
 
 
@@ -905,7 +898,7 @@ page:
 # 404 Page
 #---------------------------
 page404:
-  enable: false
+  enable: true
   banner_img: /img/default.png
   banner_img_height: 85
   banner_mask_alpha: 0.3
@@ -951,8 +944,8 @@ links:
   # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
   # Custom content at the bottom of the links
   custom:
-    enable: true
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：暮雨千泷</li><li>简介：青天白日梦神仙</li><li>链接：https://www.myql.xyz</li><li>图片：https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/circle-cropped.webp</li></ul>'
+    enable: false
+    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
 
   # 评论插件
   # Comment plugin
