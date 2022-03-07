@@ -56,6 +56,13 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
         editor:
           preview: false      # 是否开启编辑预览
         fields:
+          - label: "导航栏"
+            name: "navbar"
+            widget: "object"
+            collapsed: true   # 是否折叠显示
+            fields:
+              - {label: "博客名", name: "blog_title", widget: "string", required: false}
+              - {label: "毛玻璃特效", name: "ground_glass", widget: "boolean", default: true, required: false}
           - label: "首页"
             name: "index"
             widget: "object"
@@ -67,6 +74,11 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
+              - label: "副标题"
+                name: "slogan"
+                widget: "object"
+                fields:
+                  - {label: "修改副标题", name: "text", widget: "string", required: false}
           - label: "文章页"
             name: "post"
             widget: "object"
@@ -125,6 +137,15 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
+              - label: "作者头像"
+                name: "avatar"
+                widget: "image"
+              - label: "博客名称"
+                name: "name"
+                widget: "string"
+              - label: "网站描述"
+                name: "intro"
+                widget: "string"
           - label: "友链页面"
             name: "links"
             widget: "object"
@@ -136,7 +157,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
-              - label: "项目"
+              - label: "添加友链"
                 name: "items"
                 widget: "list"
                 fields:

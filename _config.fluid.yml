@@ -299,12 +299,12 @@ iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
 navbar:
   # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
   # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
-  blog_title: "演示站点"
+  # blog_title: ""
 
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
   ground_glass:
-    enable: false
+    # enable: true
 
     # 模糊像素，只能为数字，数字越大模糊度越高
     # Number of blurred pixel. the larger the number, the higher the blur
@@ -439,7 +439,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  # banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/background.webp
+  # banner_img: /img/default.png
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -458,7 +458,7 @@ index:
 
     # 为空则按 hexo config.subtitle 显示
     # If empty, text based on `subtitle` in hexo config
-    text: "这是一个演示博客,可以登陆后台实际测试效果"
+    # text: ""
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
     # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
@@ -511,13 +511,13 @@ index:
 # Post Page
 #---------------------------
 post:
-  # banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/mmexport1602581319886.webp
+  # banner_img: /img/default.png
   # banner_img_height: 70
   banner_mask_alpha: 0.3
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  # default_index_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-g8wvm7.webp
+  # default_index_img:
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -805,8 +805,8 @@ cusdis:
 # Archive Page
 #---------------------------
 archive:
-  # banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421595370-wallhaven-q6ov7d.jpg
-  # banner_img_height: 80
+  # banner_img: /img/default.png
+  # banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
 
@@ -817,8 +817,8 @@ archive:
 #---------------------------
 category:
   enable: true
-  # banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421818281-wallhaven-zm93dj.jpg
-  # banner_img_height: 80
+  # banner_img: /img/default.png
+  # banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
 
@@ -847,7 +847,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  # banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421669417-wallhaven-1kkm2g.jpg
+  # banner_img: /img/default.png
   # banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle:
@@ -865,13 +865,13 @@ tag:
 #---------------------------
 about:
   enable: true
-  # banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-pkkr2.webp
-  # banner_img_height: 80
+  # banner_img: /img/default.png
+  # banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
-  avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant theme for Hexo"
+  # avatar: /img/avatar.png
+  # name: "Fluid"
+  # intro: "An elegant theme for Hexo"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
@@ -911,8 +911,8 @@ page404:
 #---------------------------
 links:
   enable: true
-  # banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421416500-wallhaven-rddv31.jpg
-  # banner_img_height: 80
+  # banner_img: /img/default.png
+  # banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
   # 友链的成员项
