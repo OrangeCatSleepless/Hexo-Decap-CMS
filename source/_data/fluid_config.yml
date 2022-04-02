@@ -1,12 +1,11 @@
 navbar:
-  blog_title: "演示站点"
-  ground_glass:
-    enable: true
+  blog_title: 演示站点
+  ground_glass: true
 index:
   banner_img: /images/uploads/background.webp
   banner_img_height: 100
   slogan:
-    text: "这是一个演示博客,可以登陆后台实际测试效果"
+    text: 这是一个演示博客,可以登陆后台实际测试效果
 post:
   banner_img: /images/uploads/mmexport1602581319886.webp
   banner_img_height: 70
@@ -24,8 +23,8 @@ about:
   banner_img: /images/uploads/wallhaven-pkkr2.webp
   banner_img_height: 80
   avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant theme for Hexo"
+  name: Fluid
+  intro: An elegant theme for Hexo
 links:
   banner_img: /images/uploads/1616421416500-wallhaven-rddv31.jpg
   banner_img_height: 80
