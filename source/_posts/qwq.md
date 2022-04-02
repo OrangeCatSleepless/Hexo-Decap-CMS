@@ -1,4 +1,5 @@
 ---
+banner_img: /images/uploads/1616421669417-wallhaven-1kkm2g.jpg
 title: qwq
 date: 2022-03-29 16:10:06
 updated: 2022-03-29 16:10:06
