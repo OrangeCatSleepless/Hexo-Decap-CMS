@@ -14,21 +14,26 @@ post:
 archive:
   banner_img: /images/uploads/1616421595370-wallhaven-q6ov7d.jpg
   banner_img_height: 80
+  subtitle: null
 category:
   banner_img: /images/uploads/1616421818281-wallhaven-zm93dj.jpg
   banner_img_height: 80
+  subtitle: null
 tag:
   banner_img: /images/uploads/1616421669417-wallhaven-1kkm2g.jpg
   banner_img_height: 80
+  subtitle: null
 about:
   banner_img: /images/uploads/wallhaven-pkkr2.webp
   banner_img_height: 80
+  subtitle: null
   avatar: /img/avatar.png
   name: "Fluid"
   intro: "An elegant theme for Hexo"
 links:
   banner_img: /images/uploads/1616421416500-wallhaven-rddv31.jpg
   banner_img_height: 80
+  subtitle: null
   items:
     - title: Fluid Repo
       intro: 主题 GitHub 仓库
@@ -37,4 +42,4 @@ links:
     - title: 暮雨千泷
       intro: 青天白日梦神仙
       link: https://www.myql.xyz
-      avatar: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/circle-cropped.webp
+      avatar: https://cdn.jsdelivr.net/gh/leicancun/img@main/images/avatar.webp

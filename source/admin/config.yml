@@ -23,17 +23,17 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
     fields: # 每份文件的字段，通常是前面的内容。
       - {label: "顶部图", name: "banner_img", widget: "image", required: false} 
       - {label: "文章封面", name: "index_img", widget: "image", required: false} 
-      - {label: "文章排序", name: "sticky", widget: "number", required: false}
-      - {label: "标题", name: "title", widget: "string", tagname: 'h1' }
+      - {label: "文章排序", name: "sticky", widget: "number", required: false, hint: "数值越大，该文章越靠前"}
+      - {label: "标题", name: "title", widget: "string" }
       - {label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
       - {label: "更新日期", name: "updated", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", required: false}
       - {label: "标签", name: "tags", widget: "list", required: false}
       - {label: "分类", name: "categories", widget: "list", required: false}
       - {label: "关键词", name: "keywords", widget: "list", required: false}
       - {label: "摘要", name: "excerpt", widget: "list", required: false}
-      - {label: "内容", name: "body", widget: "markdown", required: false}
       - {label: "永久链接", name: "permalink", widget: "string", required: false}
       - {label: "评论", name: "comments", widget: "boolean", default: true, required: false}
+      - {label: "内容", name: "body", widget: "markdown", required: false}
 
   - name: "pages"
     label: "Pages"
@@ -42,7 +42,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
         name: "about"
         label: "关于"
         fields:
-          - {label: "标题", name: "title", widget: "string", tagname: 'h1' }
+          - {label: "标题", name: "title", widget: "string"}
           - {label: "内容", name: "body", widget: "markdown", required: false}
           - {label: "评论", name: "comments", widget: "boolean", default: true, required: false}
 
@@ -71,6 +71,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "顶部图"
                 name: "banner_img"
                 widget: "image"
+                default: "/img/default.png"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
@@ -87,6 +88,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "顶部图(默认)"
                 name: "banner_img"
                 widget: "image"
+                default: "/img/default.png"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number" 
@@ -101,9 +103,14 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "顶部图"
                 name: "banner_img"
                 widget: "image"
+                default: "/img/default.png"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
+              - label: "副标题"
+                name: "subtitle"
+                widget: "string"
+                required: false  
           - label: "分类页"
             name: "category"
             widget: "object"
@@ -112,9 +119,14 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "顶部图"
                 name: "banner_img"
                 widget: "image"
+                default: "/img/default.png"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
+              - label: "副标题"
+                name: "subtitle"
+                widget: "string"
+                required: false
           - label: "标签页"
             name: "tag"
             widget: "object"
@@ -123,9 +135,14 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "顶部图"
                 name: "banner_img"
                 widget: "image"
+                default: "/img/default.png"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
+              - label: "副标题"
+                name: "subtitle"
+                widget: "string"
+                required: false
           - label: "关于页"
             name: "about"
             widget: "object"
@@ -134,9 +151,14 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "顶部图"
                 name: "banner_img"
                 widget: "image"
+                default: "/img/default.png"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
+              - label: "副标题"
+                name: "subtitle"
+                widget: "string"
+                required: false
               - label: "作者头像"
                 name: "avatar"
                 widget: "image"
@@ -154,9 +176,14 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
               - label: "顶部图"
                 name: "banner_img"
                 widget: "image"
+                default: "/img/default.png"
               - label: "高度"
                 name: "banner_img_height"
                 widget: "number"
+              - label: "副标题"
+                name: "subtitle"
+                widget: "string"
+                required: false
               - label: "添加友链"
                 name: "items"
                 widget: "list"
