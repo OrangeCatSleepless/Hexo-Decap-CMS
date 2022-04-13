@@ -1,7 +1,7 @@
 backend:
   # name: test-repo # 测试专用 https://www.netlifycms.org/docs/test-backend/
   name: git-gateway # https://www.netlifycms.org/docs/git-gateway-backend/
-  branch: main # 要更新的分支(可选；默认为主分支)
+  branch: test # 要更新的分支(可选；默认为主分支)
   squash_merges: true # 合并提交
 
 local_backend: true
@@ -12,6 +12,9 @@ publish_mode: editorial_workflow
 # This line should *not* be indented
 media_folder: "source/images/uploads" # 媒体文件将存储在图片/上载下的Repo中。
 public_folder: "/images/uploads" # 上传的媒体的src属性将以/images/uploads开头。
+
+site_url: https://qwqmiao.cf # 网站网址
+display_url: https://qwqmiao.cf # 显示网址
 
 locale: "zh_Hans" # 语言环境 https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-locales/src
 
