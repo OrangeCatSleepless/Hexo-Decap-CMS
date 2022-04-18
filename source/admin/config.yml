@@ -30,7 +30,7 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
       - {label: "标签", name: "tags", widget: "list", required: false}
       - {label: "分类", name: "categories", widget: "list", required: false}
       - {label: "关键词", name: "keywords", widget: "list", required: false}
-      - {label: "摘要", name: "excerpt", widget: "list", required: false}
+      - {label: "摘要", name: "excerpt", widget: "string", required: false}
       - {label: "永久链接", name: "permalink", widget: "string", required: false}
       - {label: "评论", name: "comments", widget: "boolean", default: true, required: false}
       - {label: "内容", name: "body", widget: "markdown", required: false}
