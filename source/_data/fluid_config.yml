@@ -1,12 +1,12 @@
 navbar:
-  blog_title: 熊涛子の个人博客
+  blog_title: 这是可更改的
   ground_glass:
     enable: true
 index:
   banner_img: /images/uploads/background.webp
   banner_img_height: 100
   slogan:
-    text: 熊涛子の个人博客
+    text: 这是可更改的
 post:
   banner_img: /images/uploads/mmexport1602581319886.webp
   banner_img_height: 70
