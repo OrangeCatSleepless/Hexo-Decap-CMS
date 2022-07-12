@@ -2,7 +2,7 @@
 
 ## 介绍
 
-使用 [Hexo 6.0.0](https://hexo.io/) 和 [Netlify CMS](https://github.com/netlify/netlify-cms) 构建的示例站点
+使用 [Hexo 6.2.0](https://hexo.io/) 和 [Netlify CMS](https://github.com/netlify/netlify-cms) 构建的示例站点
 
 使用子模块方式，目前内置 [next主题 v8.12.2](https://github.com/next-theme/hexo-theme-next) | [fluid主题 v1.9.2](https://github.com/fluid-dev/hexo-theme-fluid) | [cards主题 1.3.1](https://github.com/ChrAlpha/hexo-theme-cards)
 
