@@ -2,9 +2,9 @@
 
 ## 介绍
 
-使用 [Hexo 6.2.0](https://hexo.io/) 和 [Netlify CMS](https://github.com/netlify/netlify-cms) 构建的示例站点
+使用 [Hexo 6.3.0](https://hexo.io/) 和 [Netlify CMS](https://github.com/netlify/netlify-cms) 构建的示例站点
 
-使用子模块方式，目前内置 [next主题 v8.12.2](https://github.com/next-theme/hexo-theme-next) | [fluid主题 v1.9.2](https://github.com/fluid-dev/hexo-theme-fluid) | [cards主题 1.3.1](https://github.com/ChrAlpha/hexo-theme-cards)
+使用子模块方式，目前内置 [next主题 v8.14.0](https://github.com/next-theme/hexo-theme-next) | [fluid主题 v1.9.4](https://github.com/fluid-dev/hexo-theme-fluid) | [cards主题 1.3.2](https://github.com/ChrAlpha/hexo-theme-cards)
 
 默认启用了 [fluid主题](https://github.com/next-theme/hexo-theme-next) ，如要切换主题请在 [_config.yml](https://github.com/leicancun/hexo-netlify/blob/main/_config.yml) 更改 `theme: fluid` 中 `fluid` 改为你需要的主题名称
 
