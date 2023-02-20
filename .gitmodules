@@ -7,3 +7,6 @@
 [submodule "themes/cards"]
 	path = themes/cards
 	url = https://github.com/ChrAlpha/hexo-theme-cards.git
+[submodule "themes/Acrylic"]
+	path = themes/Acrylic
+	url = https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic
