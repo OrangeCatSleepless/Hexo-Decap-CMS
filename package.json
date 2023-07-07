@@ -12,10 +12,11 @@
     "version": ""
   },
   "dependencies": {
-    "hexo": "6.3.0",
+    "css": "^3.0.0",
+    "hexo": "7.0.0-rc1",
     "hexo-abbrlink": "2.2.1",
     "hexo-all-minifier": "0.5.7",
-    "hexo-deployer-git": "3.0.0",
+    "hexo-deployer-git": "4.0.0",
     "hexo-filter-nofollow": "2.0.2",
     "hexo-generator-archive": "2.0.0",
     "hexo-generator-category": "2.0.0",
@@ -24,8 +25,8 @@
     "hexo-generator-sitemap": "3.0.1",
     "hexo-generator-tag": "2.0.0",
     "hexo-renderer-ejs": "2.0.0",
-    "hexo-renderer-markdown-it":"6.1.0",
-    "hexo-renderer-stylus": "2.1.0",
+    "hexo-renderer-markdown-it":"7.1.0",
+    "hexo-renderer-stylus": "3.0.0",
     "hexo-server": "3.0.0"
   }
 }
