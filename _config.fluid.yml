@@ -253,15 +253,11 @@ web_analytics:  # 网页访问统计
   # See: https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376
   baidu:
 
-  # Google 统计的 Tracking ID
-  # Google analytics, set Tracking ID
-  # See: https://developers.google.com/analytics/devguides/collection/analyticsjs
+  # Google Analytics 4 的媒体资源 ID
+  # Google Analytics 4 MEASUREMENT_ID
+  # See: https://support.google.com/analytics/answer/9744165#zippy=%2Cin-this-article
   google:
-
-  # Google gtag.js 的媒体资源 ID
-  # Google gtag.js GA_MEASUREMENT_ID
-  # See: https://developers.google.com/analytics/devguides/collection/gtagjs/
-  gtag:
+    measurement_id:
 
   # 腾讯统计的 H5 App ID，开启高级功能才有cid
   # Tencent analytics, set APP ID
@@ -332,7 +328,7 @@ navbar:
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
   ground_glass:
-    # enable: true
+    # enable: false
 
     # 模糊像素，只能为数字，数字越大模糊度越高
     # Number of blurred pixel. the larger the number, the higher the blur
@@ -441,7 +437,7 @@ footer:
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: true
+    enable: false
 
     # 统计数据来源，使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
     # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
@@ -736,7 +732,11 @@ post:
     enable: false
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
+<<<<<<< HEAD
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
+=======
+    # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
+>>>>>>> main
     type: disqus
 
 
@@ -856,7 +856,7 @@ remark42:
   components: ['embed']
 
 # Twikoo
-# 基于腾讯云开发
+# 支持腾讯云、Vercel、Railway 等多种平台部署
 # Based on Tencent CloudBase
 # See: https://twikoo.js.org
 twikoo:
@@ -890,6 +890,18 @@ giscus:
   input-position: top
   lang: zh-CN
 
+<<<<<<< HEAD
+=======
+# Discuss
+# 多平台、多数据库、自托管、免费开源评论系统
+# Self-hosted, small size, multi-platform, multi-database, free and open source commenting system
+# See: https://discuss.js.org
+discuss:
+  serverURLs:
+  path: window.location.pathname
+
+
+>>>>>>> main
 #---------------------------
 # 归档页
 # Archive Page
@@ -1040,7 +1052,11 @@ links:
     enable: false
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
+<<<<<<< HEAD
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
+=======
+    # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
+>>>>>>> main
     type: disqus
 
 
@@ -1065,6 +1081,7 @@ static_prefix:
 
   github_markdown: https://lib.baomitu.com/github-markdown-css/4.0.0/
 
+<<<<<<< HEAD
   jquery: https://lib.baomitu.com/jquery/3.6.0/
 
   bootstrap: https://lib.baomitu.com/twitter-bootstrap/4.6.1/
@@ -1072,6 +1089,15 @@ static_prefix:
   prismjs: https://lib.baomitu.com/prism/1.27.0/
 
   tocbot: https://lib.baomitu.com/tocbot/4.18.2/
+=======
+  jquery: https://lib.baomitu.com/jquery/3.6.4/
+
+  bootstrap: https://lib.baomitu.com/twitter-bootstrap/4.6.1/
+
+  prismjs: https://lib.baomitu.com/prism/1.29.0/
+
+  tocbot: https://lib.baomitu.com/tocbot/4.20.1/
+>>>>>>> main
 
   typed: https://lib.baomitu.com/typed.js/2.0.12/
 
@@ -1079,6 +1105,7 @@ static_prefix:
 
   nprogress: https://lib.baomitu.com/nprogress/0.2.0/
 
+<<<<<<< HEAD
   mathjax: https://lib.baomitu.com/mathjax/3.2.1/
 
   katex: https://lib.baomitu.com/KaTeX/0.15.6/
@@ -1099,4 +1126,28 @@ static_prefix:
 
   twikoo: https://lib.baomitu.com/twikoo/1.5.11/
 
+=======
+  mathjax: https://lib.baomitu.com/mathjax/3.2.2/
+
+  katex: https://lib.baomitu.com/KaTeX/0.16.2/
+
+  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
+
+  clipboard: https://lib.baomitu.com/clipboard.js/2.0.11/
+
+  mermaid: https://lib.baomitu.com/mermaid/8.14.0/
+
+  valine: https://lib.baomitu.com/valine/1.5.1/
+
+  waline: https://cdn.staticfile.org/waline/2.15.5/
+
+  gitalk: https://lib.baomitu.com/gitalk/1.8.0/
+
+  disqusjs: https://lib.baomitu.com/disqusjs/1.3.0/
+
+  twikoo: https://lib.baomitu.com/twikoo/1.6.8/
+
+  discuss: https://lib.baomitu.com/discuss/1.2.1/
+
+>>>>>>> main
   hint: https://lib.baomitu.com/hint.css/2.7.0/

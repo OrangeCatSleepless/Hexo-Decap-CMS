@@ -1,0 +1,765 @@
+# 欢迎使用Acrylic主题!🎉
+# Welcome to use theme of Acrylic!🎉
+# 文档: https://pro.Acrylic.org.cn/
+# docs: https://docs.pro.Acrylic.org.cn/
+# 交流群: 649565726
+# 这是Dev版!
+# -------------------------------------
+
+# 图片
+# --------------------------------
+
+# 网站图标 (favicon)
+favicon: https://tucdn.wpon.cn/2023/02/10/a43d4d587028e.png
+
+# 头像 (avatar)
+avatar:
+  img: https://p.zhheo.com/2023ab4befd994d9bc8e1e6a78027d517e21075402.png!cover
+
+# 默认信息 (default)
+default_img: https://img1.acrylic.org.cn/2023/04/16/643b6a036a2cb.webp
+default_title: 没有配置捏
+default_text: 没有配置捏
+
+# 搜索 (search)
+# --------------------------------
+
+# Algolia 搜索 (Algolia search)
+algolia_search:
+  enable: false
+  hits:
+    per_page: 6
+
+# 本地搜索 (Local search)
+local_search:
+  enable: false
+  preload: false
+  CDN:
+
+
+# 导航栏 (nav)
+# --------------------------------
+nav:
+  group_icon: fas fa-grip-vertical
+  left_groups:
+    enable: true
+    group:
+      - title: 博客
+        a_item:
+          - text: 主页
+            link: https://zhheo.com/
+            img: https://p.zhheo.com/20232e121c3fb2daa71897d26a515e030f49073402.png!cover_mini
+            class: out
+          - text: 博客
+            link: /
+            img: https://p.zhheo.com/20234681e06b8e086aa5b15481cb89fd38c7071002.png!cover_mini
+            class: out
+          - text: 图片博客
+            link: https://plog.zhheo.com/
+            img: https://p.zhheo.com/20236a16354d7c333cc7595efaee4b8c5667074602.png!cover_mini
+            class: out
+          - text: 开发博客
+            link: https://apps.zhheo.com/
+            img: https://p.zhheo.com/2023042bb31614949504f9ac59b134ce971d075802.png!cover_mini
+            class: out
+  logo: 
+    enable: true
+    class: i_class #i_class/text/img i_class为icon图标,text为文字,img为图片
+    custom: heofont icon-heologo # heofont icon-heologo / Heo / https://xxx.com/logo.png/
+  fps_enable: false
+  menu:
+    文库:
+      文章列表: /archives/ || fas fa-box-archive
+      全部分类: /categories/ || fas fa-cube
+      全部标签: /tags/ || fas fa-tags
+      即刻短文: /essay/ || fas fa-bars-staggered
+    专栏:
+      设计报告: /tags/设计报告/ || fas fa-swatchbook
+      设计分享: /tags/Heocan/ || fas fa-object-group
+      设计工具: /tags/Sketch/ || fas fa-palette
+      视频混剪: /tags/混剪/ || fas fa-scissors
+    友链:
+      友链鱼塘: /fcircle/ || fas fa-fish-fins
+      友情链接: /link/ || fas fa-user-group
+      宝藏博主: javascript:travelling() || fas fa-bus
+    我的:
+      我的装备: /equipment/ || fa-fw heofont icon-bijiben
+      在线工具: /tlink/ || fas fa-screwdriver-wrench
+      关于本站: /about/ || fas fa-sailboat
+  right_button:
+    travelling:
+      enable: true
+      icon: fas fa-train-subway
+    random:
+      enable: true
+      icon: fas fa-shuffle
+    search: fas fa-magnifying-glass
+    console:
+      enable: true
+      icon: fas fa-bars-progress
+    totop: fas fa-arrow-up
+
+# 页面 (page)
+# --------------------------------
+# 404页面 (404 page)
+error_404:
+  enable: true
+  subtitle: '请尝试站内搜索寻找文章'
+  background: https://img1.acrylic.org.cn/2023/04/16/643b6a036a2cb.webp
+
+# 即刻短文 (essay page)
+essay:
+  enable: true
+  descr: 分享生活的小确幸
+  tip: 使用 即刻短文静态部署版 构建
+  link: /posts/49736/
+  text: 如何使用
+  icon: fas fa-circle-chevron-right
+
+# memos短文 (memos page)
+memos:
+  enable: true
+  descr: 分享生活的小确幸
+  tip: 使用 memos 构建
+  link: /posts/49736/
+  text: 如何使用
+  icon: fas fa-circle-chevron-right
+  api: https://memos.acrylic.org.cn/api/memo?creatorId=1&tag=说说&limit=30
+
+# 朋友圈fcricle (fcricle page)
+fcricle:
+  enable: true
+  descr: 实物装备推荐
+  tip: 好物
+  link: /posts/49736/
+  text: 如何使用
+  icon: fas fa-circle-chevron-right
+  api: https://fcircle.acrylic.org.cn/
+
+# 装备equipment (equipment page)
+equipment:
+  enable: true
+  descr: 实物装备推荐
+  tip: 跟 张洪Heo 一起享受科技带来的乐趣
+  link: /posts/49736/
+  text: 如何使用
+  icon: fas fa-circle-chevron-right
+
+# 友联页面 (link page)
+link:
+  enable: true
+  banner: true
+  ramdon_post: true
+  flink_posts: false #未开发完成
+  add_flink: false #未开发完成
+# 关于页面 (about page)
+about:
+  info:
+    right:
+      - 🤖️ 数码爱好者
+      - 🔍 分享与热心帮助
+      - 🏠 智能家居小能手
+      - 🔨 开发小萌新
+    left:
+      - 专修交互设计 🤝
+      - 脚踏实地行动派 🏃
+      - 专攻各种困难 🧱
+      - 人狠话不多 💢
+  job: 学生、独立开发者、博主
+  live: 中国，北京市
+  born: 1997
+  school: 大连工业大学
+  can: 产品设计
+  work: UI/产品
+  character: 逻辑学家
+  character2: INTP-T
+  personalities: https://cdn.zhheo.com/public/svg/INTP-T.svg
+  selfie: https://p.zhheo.com/202352d98ec86bef3388a0152b33cf9d06ad082002.png!cover
+  maxim1: 荆棘之路，
+  maxim2: 劈风斩浪。
+  tc1: 玄学流电脑疑难问题
+  tc2: 解决专家
+  tc3: 软件学习能力
+  tc4: MAX
+  uid: 'UID:125766904'
+  fanjuname: 刺客伍六七
+  fanjulink: 'https://www.bilibili.com/bangumi/play/ss36594/?spm_id_from=333.999.0.0'
+  liketechnology: 数码科技
+  liketechnologyand: 手机、电脑软硬件
+  sllctitle: 为什么建站？
+  xllc: 写一写你的想法……
+
+# 文章 (post)
+# --------------------------------
+post_meta:
+  page: # 首页
+    date_type: created # created/updated/both 文章显示创作日期/更新日期/都显示
+    date_format: relative 
+    categories: true # 首页显示分类
+    tags: true # 首页显示标签
+    label: true # 首页显示文章描述
+  post:
+    date_type: both # created/updated/both 文章显示创作日期/更新日期/都显示
+    date_format: date 
+    categories: true # 首页显示分类
+    tags: true # 首页显示标签
+    label: true # 首页显示文章描述
+  location: 成都 #地点
+
+# # 文章顶部ai摘要
+# post_head_ai_description:
+#   enable: true
+#   gptName: Heo
+#   mode: tianli # 默认模式 可选值: tianli/local
+#   switchBtn: false # 可以配置是否显示切换按钮 以切换tianli/local
+#   btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377
+#   randomNum: 3 # 按钮最大的随机次数，也就是一篇文章最大随机出来几种
+#   basicWordCount: 1000 # 最低获取字符数, 最小1000, 最大1999
+#   key: SZLhZo3TjRN7GZ9JiRFa
+#   Referer: https://xx.xx/
+
+theme_color:
+  enable: true
+  mode: img2color # online/local(未完成)
+  api: https://api-marcusyyds.vercel.app/v1/img2color
+
+# 字数统计 (wordcount)
+# 注意安装对应的插件
+wordcount:
+  enable: false
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# 数学公式
+# MathJax
+mathjax:
+  enable: false
+  per_page: false
+
+# KaTeX
+katex:
+  enable: false
+  per_page: false
+  hide_scrollbar: true
+
+# 版权 (copyright)
+copyright:
+  enable: true
+  link: /cc/
+  license: CC BY-NC-SA 4.0
+  short: cc
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  
+# 相关文章 (related post)
+related_post:
+  enable: true
+
+# 文章 ptool (ptool)
+ptool:
+  enable: true
+
+# 打赏 (reward)
+reward:
+  enable: true
+  QR_code:
+    - img: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/wechat.png
+      link:
+      text: 微信
+    - img: https://cdn.staticaly.com/gh/gtwxxh666/pic@main/1/alipay.png
+      link:
+      text: 支付宝
+
+# 评论 (comments)
+# --------------------------------
+comments:
+  use: Twikoo # Waline/Twikoo/Artalk
+  text: true # 在按钮旁边显示评论名称
+  # lazyload: 当评论进入浏览器视野时，评论系统将被加载。
+  lazyload: false
+  count: true # 顶部图显示评论数
+  card_post_count: false # 首页显示评论数
+
+# waline 
+# https://waline.js.org/
+waline:
+  serverURL: # Waline server address url
+  bg: # waline background
+  pageview: false
+  option:
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  envId: https://t.pro.acrylic.org.cn/
+  region: 
+  visitor: false
+  option:
+
+# Artalk
+# https://artalk.js.org/guide/frontend/config.html
+artalk:
+  server:
+  site:
+  visitor: false
+  option:
+
+# 首页 hometop (hometop)
+hometop:
+  enable: true
+  banner:
+    enable: true
+    class: creativity #people(人潮汹涌)/creativity(创造力)
+    title_up: 分享设计
+    title_dn: 与科技生活
+    tips: ZHHEO.COM
+  categoryGroup:
+    enable: true
+    category_list:
+      - name: 必看精选
+        path: /tags/必看/
+        shadow: var(--heo-shadow-blue)
+        class: bikan
+        icon: fas fa-dove
+      - name: 热门文章
+        path: /tags/热门/
+        shadow: var(--heo-shadow-red)
+        class: remen
+        icon: fas fa-burn
+      - name: 实用教程
+        path: /tags/教程/
+        shadow: var(--heo-shadow-green)
+        class: shiyong
+        icon: fas fa-book
+  topgroup:
+    enable: true
+    class: both #card/post/both
+    #如果为card/both
+    card:
+      tips: 强势回归
+      title: Acrylic-Promote
+      bg: https://img1.acrylic.org.cn/2023/04/16/643b6a036a2cb.webp
+      link: https://blog.zhheo.com/p/671f98c8.html
+      buttontext: 更多推荐
+      icon: fas fa-circle-plus
+      color: #0E57D5
+      text_color: #ffffff # 默认白色
+
+# 页脚 (footer)
+# --------------------------------
+footer:
+  bar:
+    enable: true
+    logo: heofont icon-heologo
+    desc: 最新设计与科技的文章
+    link: /
+    button_text: 了解更多
+  footer_icons:
+    enable: true
+    left:
+      - icon: fa-solid fa-compass
+        link: https://www.marcus233.top/
+        desrc: 个人主页
+        class: out
+      - icon: fa-brands fa-qq
+        link: https://res.abeim.cn/api/qq/?qq=3105950984
+        desrc: 联系QQ
+        class: out
+      - icon: fa-brands fa-weixin
+        link: /wechat/
+        desrc: 联系微信
+        class: in
+      - icon: fa-solid fa-envelope
+        link: mailto:marcus@marcus233.top
+        desrc: 发送邮件
+        class: out
+    right:
+      - icon: fa-brands fa-github
+        link: https://github.com/Marcusyyds
+        desrc: Github主页
+        class: out
+      - icon: fa-brands fa-bilibili
+        link: https://space.bilibili.com/1024450661
+        desrc: 哔哩哔哩主页
+        class: out
+      - icon: fa-solid fa-star
+        link: /stars/
+        desrc: 藏宝阁
+        class: in
+      - icon: fa-solid fa-comment
+        link: /message/
+        desrc: 留言
+        class: in
+  footer_logo:
+    enable: true
+    url: https://bu.dusays.com/2023/03/03/6401a7960c0fb.webp
+  footer_group:
+    enable: true
+    footer_group_link:
+      - group_title: 软件
+        footer_links: 
+          - text: 敲木鱼
+            link: /stars/
+            class: in
+          - text: 轻节食
+            link: /sentence/
+            class: in
+          - text: DelSpace3
+            link: /zone/
+            class: in
+          - text: 比例计
+            link: /fcircle/
+            class: in
+      - group_title: 产品
+        footer_links: 
+          - text: 设计报告
+            link: /about/
+            class: in
+          - text: 优质报告
+            link: /atom.xml
+            class: in
+      - group_title: 设计
+        footer_links: 
+          - text: Heocan
+            link: /categories/博客相关
+            class: in
+          - text: Sketch
+            link: /categories/生活点滴
+            class: in 
+          - text: 设计报告
+            link: /categories/资源分享
+            class: in
+          - text: Photoshop
+            link: /categories/学习笔记
+            class: in
+      - group_title: 开发
+        footer_links: 
+          - text: Hexo魔改
+            link: /categories/博客相关
+            class: in
+          - text: Swift开发
+            link: /categories/生活点滴
+            class: in 
+          - text: 网页前端
+            link: /categories/资源分享
+            class: in
+      - group_title: 生活
+        footer_links: 
+          - text: 音乐榜单
+            link: /music/
+            class: in
+          - text: 我的电影
+            link: /categories/生活点滴
+            class: in 
+          - text: 读书笔记
+            link: /categories/资源分享
+            class: in
+          - text: 视频剪辑
+            link: /categories/学习笔记
+            class: in
+      - group_title: 导航
+        footer_links: 
+          - text: 即刻短文
+            link: /categories/博客相关
+            class: in
+          - text: 在线工具
+            link: /categories/生活点滴
+            class: in 
+          - text: 友链文章
+            link: /categories/资源分享
+            class: in
+      - group_title: 服务
+        footer_links: 
+          - text: 51la统计
+            link: /categories/博客相关
+            class: in
+          - text: BlogFinder
+            link: /categories/生活点滴
+            class: in 
+          - text: 十年之约
+            link: /categories/资源分享
+            class: in
+      - group_title: 协议
+        footer_links: 
+          - text: 隐私协议
+            link: /categories/博客相关
+            class: in
+          - text: Cookies
+            link: /categories/生活点滴
+            class: in 
+          - text: 版权协议
+            link: /categories/资源分享
+            class: in
+  footer_friend_links:
+    enable: true
+  footer_bottom:
+    copyright:
+      enable: true
+      time: 2022
+    right:
+      - text: 京ICP备1905135号
+        link: https://beian.miit.gov.cn/#/Integrated/index
+
+
+# 侧边栏 (aside)
+# --------------------------------
+aside:
+  enable: true
+  button: true
+  mobile: true # 手机显示
+  position: right # 左边右边 right/left
+  card_author:
+    enable: true
+    description: <div class="author-info__description"></div>这有关于<b>产品、设计、开发</b>相关的问题和看法，还有<b>文章翻译</b>和<b>分享</b>。<div class="author-info__description2"></div>相信你可以在这里找到对你有用的<b>知识</b>和<b>教程</b>。
+    button:
+      link: /about/
+      icon: fas fa-circle-chevron-right
+      text: 了解更多
+    social:
+      - title: Dribbble
+        icon: fab fa-dribbble
+        link: https://dribbble.com/zhheo
+      - title: Github
+        icon: fab fa-github
+        link: https://github.com/zhheo
+  card_weixin:
+    enable: true
+    face: https://p.zhheo.com/202363e5ca73123f202bbeda6f024866a181080502.png!cover
+    backFace: https://p.zhheo.com/202309da537f19ad4992f1340e53a11098df081402.png!cover
+  card_recent_post:
+    enable: false
+    limit: 5 # 输入0全显示
+    sort: date # 显示发布日期/更新日期
+    sort_order: 
+  card_all_info:
+    enable: true
+    post_count: true
+    runtime: true
+    word_count: false
+
+# 工具 (tool)
+# --------------------------------
+
+# 广告 (ad)
+# ad:
+#   index:
+#   aside:
+#   post:
+
+# 加载动画 (loading)
+loading: 
+  enable: true
+
+# 手机边栏 (sidebar)
+sidebar: 
+  list_group: true
+  tag: true
+
+# 中控台 (console)
+console:
+  comment: true
+  tag: true
+  archives: true 
+
+# 图片灯箱 (fancybox)
+# http://fancyapps.com/fancybox/3/
+fancybox: true
+
+# 标签外挂 (mermaid)
+mermaid:
+  enable: false
+  # 主题: default/forest/dark/neutral
+  theme:
+    light: default
+    dark: dark
+
+# 标签 (Note)
+note:
+  style: flat
+  icons: true
+  border_radius: 3
+  light_bg_offset: 0
+
+# 外挂标签 (tag)
+tag:
+  biliapi: https://api.320.ink/api/b?id=
+
+# 显示模式 (display mode)
+display_mode: light #light/dark
+
+# 网址运行时间 (runtime)
+runtime:
+  enable: true
+  time: "2023/02/08 00:00:00"
+
+# 卜算子 (busuanzi) 
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+
+# 右下悬浮栏 (right side)
+# --------------------------------
+
+rightside_item_order:
+  enable: false
+  hide: 
+  show: 
+# 简体繁体切换
+translate:
+  enable: true
+  default: 繁
+  defaultEncoding: 2
+  translateDelay: 0
+  msgToTraditionalChinese: '繁'
+  msgToSimplifiedChinese: '簡'
+
+# 阅读模式
+readmode: false
+
+# 深色模式
+darkmode:
+  enable: true
+  button: true
+  # 自动切换暗/亮模式
+  # 1： 按照系统设置，如果系统不支持深色模式，它将在下午 6 点到早上 6 点之间切换深色模式
+  # 2： 在下午 6 点到早上 6 点之间切换黑暗模式
+  autoChangeMode: 1
+
+# Pjax
+# 它可能包含错误和不稳定
+# https://github.com/MoOx/pjax
+pjax:
+  enable: true
+  exclude:
+    # - xxxx
+    # - xxxx
+
+# Aplayer
+aplayerInject:
+  enable: false
+  per_page: true
+
+
+# 弹窗 (snackbar)
+# https://github.com/polonel/SnackBar
+# 位置 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+snackbar:
+  enable: true
+  position: top-center
+  bg_light: '#49b1f5' 
+  bg_dark: '#1f1f1f' 
+
+# 预加载 (instantpage)
+# https://instant.page/
+instantpage: true
+
+# 中英文间加空格 (pangu)
+pangu:
+  enable: false
+  field: site # site/post
+
+# 图片懒加载 (lazyload)
+# https://github.com/verlok/vanillsa-lazyload
+lazyload:
+  enable: false
+  field: site # site/post
+  placeholder:
+  blur: false
+
+# 51la
+# https://v6.51.la/
+la:
+  enable: false
+  id: JduKh41OtkNBcW5g
+
+# 百度验证
+baidu:
+  enable: false
+  id: 828db1fd637f3717a876af84bf0678bd
+
+# 预加载 (preconnect)
+preconnect:
+  - //bu.dusays.com
+  - //d.zhheo.com
+  - //p.zhheo.com
+# PWA
+# https://github.com/JLHwung/hexo-offline
+pwa:
+  enable: false
+  manifest: /pwa/manifest.json
+  apple_touch_icon: /pwa/apple-touch-icon.png
+  favicon_32_32: /pwa/32.png
+  favicon_16_16: /pwa/16.png
+  mask_icon: /pwa/safari-pinned-tab.svg
+
+
+# 引入 (inject)
+# --------------------------------
+inject:
+  head:
+    # CSS
+    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="https://cdn3.codesign.qq.com/icons/X2bzpZvRWkZkAaV/latest/iconfont.css">
+    - <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.css">
+    - <script>var meting_api = "https://meting.zhheo.com/?server=:server&type=:type&id=:id&auth=:auth&r=:r";</script>
+  bottom:
+    # JS
+    # - <script src="/js/xxx.js"></script>
+
+    
+
+# CDN
+# --------------------------------
+CDN:
+  #主题CDN
+  # 可选local/jsdelivr/unpkg/cdnjs/custom
+  internal_provider: local
+
+  # 第三方CDN
+  # 可选moezz/local/jsdelivr/unpkg/cdnjs/custom/tianli(需要征得tianli本人同意)/elemecdn
+  third_party_provider: tianli
+
+  version: false
+  # Custom format
+  # 实例: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format:
+
+  option:
+    # main_css:
+    # main:
+    # utils:
+    jquery: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js
+    heo: /js/heo.js
+    # countup_js: /js/countup.js
+    # translate:
+    # local_search:
+    algolia_js: /lib/algolia/algolia.js
+    # algolia_search_v4: 
+    instantsearch_v4: /lib/algolia/instantsearch.min.js
+    # pjax:
+    twikoo: https://cdn1.tianli0.top/gh/zhheo/twikoo@dev/dist/twikoo.all.min.js
+    # waline_js:
+    # waline_css:
+    # mathjax:
+    # katex:
+    # katex_copytex:
+    # mermaid:
+    lazyload: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js
+    instantpage: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js
+    # typed:
+    # pangu:
+    pace: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js
+    qrcode: /lib/qrcode/qrcode.min.js
+    fancybox_css_v4: https://cdn1.tianli0.top/npm/@fancyapps/ui/dist/fancybox.min.css
+    # fancybox_v4:
+    snackbar_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css
+    snackbar: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js
+    # activate_power_mode:
+    fontawesomeV6: https://cdn1.tianli0.top/npm/@fortawesome/fontawesome-free/css/all.min.css
+    aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
+    meting_js: https://cdn1.tianli0.top/gh/hexo-theme-Acrylic/JS-Acrylic@main/Meting.js
+    # artalk_js:
+    # artalk_css:
