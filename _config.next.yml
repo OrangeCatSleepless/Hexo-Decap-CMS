@@ -23,6 +23,7 @@ custom_file_path:
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
+  #postBodyStart: source/_data/post-body-start.njk
   #postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
@@ -214,6 +215,7 @@ footer:
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
+  # Set to `false` to disable the copyright statement.
   copyright:
 
   # Powered by Hexo & NexT
@@ -236,7 +238,7 @@ footer:
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-# Automatically excerpt description in homepage as preamble text.
+# Use `description` in front-matter to specify post excerpt.
 excerpt_description: true
 
 # Read more button
@@ -531,6 +533,9 @@ mermaid:
     light: default
     dark: dark
 
+# WaveDrom tag
+wavedrom:
+  enable: false
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
@@ -741,9 +746,12 @@ isso: # <data_isso>
 # See: https://theme-next.js.org/docs/third-party-services/post-widgets
 # ---------------------------------------------------------------
 
-# AddThis Share. See: https://www.addthis.com
-# Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+# AddToAny Share. See: https://www.addtoany.com
+addtoany:
+  enable: false
+  buttons:
+    - facebook
+    - twitter
 
 
 # ---------------------------------------------------------------
@@ -788,6 +796,7 @@ umami:
   enable: false
   script_url: # https://umami.example.com/script.js
   website_id: # <your website id>
+  host_url: # <your umami site url>
 
 # Plausible Analytics
 # See: https://plausible.io/
@@ -866,7 +875,7 @@ local_search:
 # Firstly, you need to enable and configure the chat service.
 chat:
   enable: false
-  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
+  icon: fa fa-comment # Icon name in Font Awesome, set to `false` to disable icon.
 
 # Chatra is a functional, easy to use piece of chat software for websites.
 # For more information: https://chatra.com
