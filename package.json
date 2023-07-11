@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "css": "^3.0.0",
-    "hexo": "7.0.0-rc1",
+    "hexo": "7.0.0-rc2",
     "hexo-abbrlink": "2.2.1",
     "hexo-all-minifier": "0.5.7",
     "hexo-deployer-git": "4.0.0",
